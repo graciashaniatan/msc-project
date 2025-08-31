@@ -6,7 +6,7 @@ The model simulates the journey of patients/referrals from GP referral to potent
 ```pip install -r requirements.txt```
 
 ## Project's Objective
-To create 
+To develop a waiting list simulation model that reflects the current elective knee pathway (based on provided data). The model will then be used to current condition of the pathway and explore scenarios regarding any system performance/improvement.
 
 ## Data Structure
 The structure of the dataset used to develop this simulation model consists of columns:
@@ -73,8 +73,10 @@ Shape: 3.29
 ###
 
 ## Results
-The simulated data
+Overall, the close alignment between the empirical and simulated waiting time across all stages suggests that the model logic reflects similarly to the real-world pathway. The model would allow users to explore the current condition of the pathway and give an overview of any exploratory improvement scenarios before implementation.
 
 ## Notes
 For the reusability of the model, please ensure that the structure of the dataset used to run the model is the same.
+
+For the distributions used in the model, I designed the model so that it automatically adjusts the distributions based on any new data that is input into the code. However, some adjustments may still be required (for example, when adding another distribution to the list). The same applies to the routing, where adjustments will be necessary if any additional outcomes are introduced.
 
